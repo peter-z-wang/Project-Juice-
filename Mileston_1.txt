@@ -1,0 +1,48 @@
+Team Name: The Juicers 
+
+
+
+Members: Aaron Aaeng
+
+Emma Langdon
+
+Trevor Stephens
+
+Peter Wan
+
+
+
+Description: This project is a drink recipe website. The website will be used for an individual who has x ingredients i.e juice, soda, ice, alcohol, water, fruit, desserts etc. The user will input what ingredients he or she has and what possible recipes use the certain ingredients. This is so if an individual is confused on what he or she could make then using the website will have suggestions. And with the suggestions, if a user attempts one, he or she could rate the suggestion that the website gives. A user will also be allowed to save a recipe for future reference if it is a favorite. 
+
+	This project will help satisfy the thirst that an individual has while having the individual create and try a new recipe that he or she may not have tried. Spicing up the person’s life with a delectable and delicious drink. 
+
+	 
+
+Vision Statement: To be Earth’s most drink-centric website.
+
+
+
+Motivation: This project should be developed because it is a common issue that is griping America where individuals have certain ingredients but do not have a recipe that meaningfully incorporates the certain ingredients.
+
+
+
+Risks: The main risk is none of us knowing web development so we will all have to learn some form of web development. Since everyone in the group has a lack of experience when it involves web design. 
+
+
+
+Risk Mitigation Plan: We could all use Codecademy and other online resources to learn web development. Researching the syntax and uses of SQL also will help mitigate the risks. 
+
+
+
+Version Control: GitHub 
+
+
+
+Software Development Methodology: Agile 
+
+
+
+Collaboration Tool: Slack 
+
+
+
