@@ -11,6 +11,8 @@ Trevor Stephens
 
 Peter Wan
 
+Bryce Melvin
+
 
 
 Description: This project is a drink recipe website. 
@@ -55,4 +57,4 @@ of waiting until the end to make changes.
 Collaboration Tool: Slack 
 
 
-de
+
