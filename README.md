@@ -9,7 +9,7 @@ Emma Langdon
 
 Trevor Stephens
 
-Peter Wan
+Peter Wang
 
 Bryce Melvin
 
