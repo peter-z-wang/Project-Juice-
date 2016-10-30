@@ -1,0 +1,13 @@
+Database: MySQL
+
+Table 1: Users
+  Has 5 columns for first name, last name, username, password, and date of birth. 
+  We currently have 5 users entered into the table. 
+  
+Table 2: Alcoholic Drinks
+  The Alcoholic Drinks table has columns for the name of the drink, rating of the drink, url of the recipe, 
+  and columns for up to 10 ingredients
+  
+Table 3: Non-Alcoholic Drinks
+  THe Non-Alcoholic Drinks table has the same columns as the Alcoholic Drinks table: Name, rating, recipe url, and 10 ingredients
+
