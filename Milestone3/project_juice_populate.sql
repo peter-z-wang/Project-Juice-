@@ -8,11 +8,11 @@ CREATE TABLE Alcoholic (name char(50) primary key, instructions char(250), ratin
 
 CREATE TABLE Non_alcoholic (name char(50) primary key, instructions char(250), rating float, ingredient_one char(50),  ingredient_two char(50),  ingredient_three char(50),  ingredient_four char(50),  ingredient_five char(50), ingredient_six char(50), ingredient_seven char(50), ingredient_eight char(50), ingredient_nine char(50), ingredient_ten char(50));
 
-insert into Users values('Bryce', 'Melvin', 'bmelvin', 'password101', 'Jan 17, 1994');
-insert into Users values('Aaron', 'Aaeng', 'Aaron', 'password', 'May 2, 1994');
-insert into Users values('Peter', 'Wang', 'SwagMoney', 'swagmoney', 'Sep 22, 1980');
-insert into Users values('Emma', 'Langdon', 'Emma', 'password10', 'Feb 05, 1990');
-insert into Users values('Jack', 'Albert', 'Jal', 'test', 'Oct 20, 1992');
+insert into Users values('Bryce', 'Melvin', 'bmelvin', 'password101', '01/17/1994');
+insert into Users values('Aaron', 'Aaeng', 'Aaron', 'password', '05/02/1994');
+insert into Users values('Peter', 'Wang', 'SwagMoney', 'swagmoney', '09/22/1980');
+insert into Users values('Emma', 'Langdon', 'Emma', 'password10', '02/05/1990');
+insert into Users values('Jack', 'Albert', 'Jal', 'test', '10/20/1992');
 
 insert into Alcoholic values('Martini', 'http://allrecipes.com/recipe/14885/martini/?internalSource=hn_carousel%2003_Martini&referringId=14932&referringContentType=recipe%20hub&referringPosition=carousel%2003', 5, 'gin', 'dry vermout' ,'green olive', 'ice', NULL, NULL, NULL, NULL, NULL, NULL);
 insert into Alcoholic values('The Ultimate Cosmopolitan', 'http://allrecipes.com/recipe/133202/the-ultimate-cosmopolitan/?internalSource=recipe%20hub&referringId=1743&referringContentType=recipe%20hub&clickId=cardslot%2054', 4, 'vodka', 'triple sec', 'peach schnapps', 'cranberry juice', 'lemon juice', 'lime juice', NULL, NULL, NULL, NULL);
