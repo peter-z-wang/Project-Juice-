@@ -3,7 +3,7 @@
 <title>Ingredient Search</title>
 </head>
 <body>
-<form action="http://localhost:8000/Php/display_recipes.php" method="post">
+<form action="http://localhost:8000/ProjectJuice/display_recipes.php" method="post">
 
 	
 <p>
