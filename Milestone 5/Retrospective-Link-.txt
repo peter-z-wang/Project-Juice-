@@ -4,4 +4,8 @@ Part 1: https://www.youtube.com/watch?v=ACNMuMDuMEY
 
 Part 2: https://www.youtube.com/watch?v=BdCr6n8t7Oo
 
-Summary:
+Summary of retrospective:
+
+We discussed what we had done so far, what had gone well, and what could have been improved upon. Everyone agreed that this sprint cycle was vastly improved over previous sprints by giving each team member a specific function which they had to complete. We all agreed that this was a good strategy that we should employ in future sprint cycles. 
+
+When discussing what could have been improved upon, we noted that we did not finish all of the work we had planned to do. We underestimated the amount of time and effort building the website would take. This had a lot to do with our team’s lack of knowledge regarding web development, as we all had to learn PHP and learn to integrate SQL into our PHP code. Despite not finishing all of the work we had planned for this sprint cycle, we believe that we will accomplish more in future sprints since a large part of this sprint was learning web development.
