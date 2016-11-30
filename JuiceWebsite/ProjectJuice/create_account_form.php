@@ -5,6 +5,10 @@
 <body>
 <form action="create_account_final.php" method="POST">
 
+<p>
+<a href="juice_home.php">Home</a>
+</p>
+
 <b>Create a New Account</b>
 
 <p>First Name: 

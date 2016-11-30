@@ -1,10 +1,4 @@
 <p>
-<p>
-<a href="juice_home.php">Home</a>
-<a href="create_account_form.php">Create Account</a>
-<a href="login.php">Login</a>
-</p>
-
 <?php
 require_once('../mysqli_connect.php');
 if(isset($_POST['submit']) )

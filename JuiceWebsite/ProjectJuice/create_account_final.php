@@ -50,11 +50,13 @@ if(isset($_POST['submit'])){
         
         $stmt = mysqli_prepare($dbc, $query);
         
-        mysqli_stmt_bind_param($stmt, "sssss", $first_name, $last_name, $username, $password, $dob);
+        mysqli_stmt_bind_param($stmt, "ssssi", $first_name, $last_name, $username, $password, $dob);
         
         mysqli_stmt_execute($stmt);
         
         $affected_rows = mysqli_stmt_affected_rows($stmt);
+        
+#        echo $affected_rows;
         
         if($affected_rows == 1){
             
@@ -75,6 +77,8 @@ if(isset($_POST['submit'])){
             
         }
         
+        
+        
     } else {
         
         echo 'You need to enter the following data<br />';
@@ -86,7 +90,10 @@ if(isset($_POST['submit'])){
         }
         
     }
-    
+   
 }
 
 ?>
+<p>
+<a href="juice_home.php">Home</a>
+</p>
