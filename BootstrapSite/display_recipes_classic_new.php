@@ -80,7 +80,7 @@
 
     <!-- Page Header -->
     <!-- Set your background image for this header on the line below. -->
-    <header class="intro-header" style="background-image: url('img/After Dark Website Logo.png')" "background-size: 8000px 6000px">
+    <header class="intro-header" style="background-image: url('img/home-logo.png')" "background-size: 8000px 6000px">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
@@ -94,12 +94,12 @@
     </header>
 
     <!-- Post Content -->
-    <body style = "background-color:black;">
+    <body style = "background-color:white;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <div class="col-lg-12 text-center">
-						<h2 style = "color:white;">Results</h2>
+						<h2 style = "color:black;">Results</h2>
 						<hr class="star-light">
 					</div>
 				</div>
@@ -125,22 +125,31 @@
 						  $errorMessage = ""; 
 						}
 						}
-						echo "$errorMessage";
-						$query = "SELECT name, instructions FROM Alcoholic WHERE ingredient_one = '$ingOne' OR ingredient_two = '$ingOne' 
+						$query = "SELECT name, instructions FROM Non_alcoholic WHERE ingredient_one = '$ingOne' OR ingredient_two = '$ingOne' 
 						OR ingredient_three = '$ingOne' OR ingredient_four = '$ingOne' OR ingredient_five = '$ingOne' OR ingredient_six = '$ingOne'
 						OR ingredient_seven = '$ingOne' OR ingredient_eight = '$ingOne' OR ingredient_nine = '$ingOne' OR ingredient_ten = '$ingOne'";
-						$query2 = "SELECT name, instructions FROM Alcoholic WHERE ingredient_one = '$ingTwo' OR ingredient_two = '$ingTwo' 
+
+
+						$query2 = "SELECT name, instructions FROM Non_alcoholic WHERE ingredient_one = '$ingTwo' OR ingredient_two = '$ingTwo' 
 						OR ingredient_three = '$ingTwo' OR ingredient_four = '$ingTwo' OR ingredient_five = '$ingTwo' OR ingredient_six = '$ingTwo'
 						OR ingredient_seven = '$ingTwo' OR ingredient_eight = '$ingTwo' OR ingredient_nine = '$ingTwo' OR ingredient_ten = '$ingTwo'";
-						$query3 = "SELECT name, instructions FROM Alcoholic WHERE ingredient_one = '$ingThree' OR ingredient_two = '$ingThree' 
+
+
+						$query3 = "SELECT name, instructions FROM Non_alcoholic WHERE ingredient_one = '$ingThree' OR ingredient_two = '$ingThree' 
 						OR ingredient_three = '$ingThree' OR ingredient_four = '$ingThree' OR ingredient_five = '$ingThree' OR ingredient_six = '$ingThree'
 						OR ingredient_seven = '$ingThree' OR ingredient_eight = '$ingThree' OR ingredient_nine = '$ingThree' OR ingredient_ten = '$ingThree'";
-						$query4 = "SELECT name, instructions FROM Alcoholic WHERE ingredient_one = '$ingFour' OR ingredient_two = '$ingFour' 
+
+
+						$query4 = "SELECT name, instructions FROM Non_alcoholic WHERE ingredient_one = '$ingFour' OR ingredient_two = '$ingFour' 
 						OR ingredient_three = '$ingFour' OR ingredient_four = '$ingFour' OR ingredient_five = '$ingFour' OR ingredient_six = '$ingFour'
 						OR ingredient_seven = '$ingFour' OR ingredient_eight = '$ingFour' OR ingredient_nine = '$ingFour' OR ingredient_ten = '$ingFour'";
-						$query5 = "SELECT name, instructions FROM Alcoholic WHERE ingredient_one = '$ingFive' OR ingredient_two = '$ingFive' 
+
+
+						$query5 = "SELECT name, instructions FROM Non_alcoholic WHERE ingredient_one = '$ingFive' OR ingredient_two = '$ingFive' 
 						OR ingredient_three = '$ingFive' OR ingredient_four = '$ingFive' OR ingredient_five = '$ingFive' OR ingredient_six = '$ingFive'
 						OR ingredient_seven = '$ingFive' OR ingredient_eight = '$ingFive' OR ingredient_nine = '$ingFive' OR ingredient_ten = '$ingFive'";
+
+
 						$response = @mysqli_query($dbc, $query);
 						$response2 = @mysqli_query($dbc, $query2);
 						$response3 = @mysqli_query($dbc, $query3);
@@ -157,7 +166,7 @@
 					<div class="row">
 						<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 							<div class="col-lg-12 text-left">
-								<h2 style = "color:white;" >
+								<h2 style = "color:black;" >
 									
 									
 					<?php
@@ -193,7 +202,7 @@
 					
 					
 						foreach($results_unique as $drinkName => $link) {
-							echo '<a href="//' . $link . '" style = "color:white">' . $drinkName . '<br>' . '</a>'; 
+							echo '<a href="//' . $link . '" style = "color:black">' . $drinkName . '<br>' . '</a>'; 
 						}
 					?>
                    

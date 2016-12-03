@@ -59,7 +59,7 @@
                         <a href="index.html">Home</a>
                     </li>
                     <li>
-                        <a href="about.html">Classic</a>
+                        <a href="classic.html">Classic</a>
                     </li>
                     <li>
                         <a href="afterdark.html">After Dark</a>
