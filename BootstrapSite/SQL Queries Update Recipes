@@ -1,0 +1,14 @@
+UPDATE Alcoholic SET instructions = 'localhost:8000/martini.html' WHERE name='Martini';
+UPDATE Alcoholic SET instructions = 'localhost:8000/theultimatecosmopolitan.html' WHERE name='The Ultimate Cosmopolitan';
+UPDATE Alcoholic SET instructions = 'localhost:8000/mixedfruitdaiquiri.html' WHERE name='Mixed Fruit Daiquiri';
+UPDATE Alcoholic SET instructions = 'localhost:8000/tequilasunrise.html' WHERE name='Tequila Sunrise';
+
+
+UPDATE Non_alcoholic SET instructions = 'localhost:8000/watermelonlemonade.html' WHERE name='Watermelon Lemonade with Kiwi Splash';
+mysql> UPDATE Non_alcoholic SET instructions = 'localhost:8000/strawberrycitrusslush.html' WHERE name='Strawberry Citrus Slush';
+mysql> UPDATE Non_alcoholic SET instructions = 'localhost:8000/icedvanillasoylatte.html' WHERE name='Iced Vanilla Soy Latte';
+mysql> UPDATE Non_alcoholic SET instructions = 'localhost:8000/tropicaltea.html' WHERE name='Tropical Tea';
+mysql> UPDATE Non_alcoholic SET instructions = 'localhost:8000/nonalcoholicsangria.html' WHERE name='Non-Alcoholic Sangria';
+
+
+
