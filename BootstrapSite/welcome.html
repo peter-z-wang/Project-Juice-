@@ -1,20 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-<style>
-	body{
-		zoom: 100%
-	}
-</style>
+
 <head>
-	
-	
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>After Dark</title>
+    <title>Project Juice</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -36,10 +31,8 @@
 
 </head>
 
-
-
 <body>
-	
+
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
         <div class="container-fluid">
@@ -59,16 +52,13 @@
                         <a href="index.html">Home</a>
                     </li>
                     <li>
-                        <a href="about.html">Classic</a>
+                        <a href="classic.html">Classic</a>
                     </li>
                     <li>
                         <a href="afterdark.html">After Dark</a>
                     </li>
                     <li>
-                        <a href="contact.html">Login</a>
-                    </li>
-                    <li>
-                        <a href="contact.html">Register</a>
+                        <a href="logout.php">Logout</a>
                     </li>
                     
                 </ul>
@@ -80,100 +70,119 @@
 
     <!-- Page Header -->
     <!-- Set your background image for this header on the line below. -->
-    <header class="intro-header" style="background-image: url('img/After Dark Website Logo.png')" "background-size: 8000px 6000px">
+    <header class="intro-header" style="background-image: url('img/home-logo.png')">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <div class="post-heading">
-                       <h1>  </h1>
-                        <span class="meta"><a href="#"></a></span>
+                <div class="col-lg-18 col-lg-offset-20 col-md-22.5 col-md-offset-10">
+                    <div class="site-heading">
+                        <h1></h1>
                     </div>
                 </div>
             </div>
         </div>
     </header>
 
-    <!-- Dropdowns -->
-    
-	<?php
-	   include("config.php");
-	   session_start();
-	   
-	   if($_SERVER["REQUEST_METHOD"] == "POST") {
-	      // username and password sent from form 
-	      
-	      $myusername = mysqli_real_escape_string($db,$_POST['username']);
-	      $mypassword = mysqli_real_escape_string($db,$_POST['password']); 
-	      
-	      $sql = "SELECT * FROM Users WHERE userName = '$myusername' and passWord = '$mypassword'";
-	      $result = mysqli_query($db,$sql);
-	    //  $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
-	      $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
-	      $count = mysqli_num_rows($result);
-	      
-	      // If result matched $myusername and $mypassword, table row must be 1 row
-			
-	      if($count == 1) {
-	      //   session_register("myusername");
-	         $_SESSION['login_user'] = $myusername;
-	         
-	         header("location: index.html");
-	      }else {
-	         $error = "Your Login Name or Password is invalid";
-	      }
-	   }
-	?>
-	<html>
-	   
-	   <head>
-	      <title>Login Page</title>
-	      
-	      <style type = "text/css">
-	         body {
-	            font-family:Arial, Helvetica, sans-serif;
-	            font-size:14px;
-	         }
-	         
-	         label {
-	            font-weight:bold;
-	            width:100px;
-	            font-size:14px;
-	         }
-	         
-	         .box {
-	            border:#666666 solid 1px;
-	         }
-	      </style>
-	      
-	   </head>
-	   
-	   <body bgcolor = "#FFFFFF">
-		
-	      <div align = "center">
-	         <div style = "width:300px; border: solid 1px #333333; " align = "left">
-	            <div style = "background-color:#333333; color:#FFFFFF; padding:3px;"><b>Login</b></div>
-					
-	            <div style = "margin:30px">
-	               
-	               <form action = "" method = "post">
-	                  <label>UserName  :</label><input type = "text" name = "username" class = "box"/><br /><br />
-	                  <label>Password  :</label><input type = "password" name = "password" class = "box" /><br/><br />
-	                  <input type = "submit" value = " Submit "/><br />
-	               </form>
-	               
-	               <div style = "font-size:11px; color:#cc0000; margin-top:10px"><?php echo $error; ?></div>
-						
-	            </div>
-					
-	         </div>
-				
-	      </div>
-	
-	   </body>
-	</html>
-	
+    <!-- Find Your Juice Section -->
+    <section class="success" id="find-your-juice">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Welcome Back to Project Juice</h2>
+                    <hr class="star-light">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <p>Different juices speak to different souls.  Find your favorite juice now.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <hr>
+    <!-- About Section -->
+    <section class="success" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>About</h2>
+                    <hr class="star-light">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-lg-offset-2">
+                    <p>Project Juice was created to quench everyone's desire for a central location for juice.  From smoothies to mixed drinks, anyone can find the liquid they crave.</p>
+                </div>
+                <div class="col-lg-4">
+                    <p>Born from the minds of just four visionaries, we have connected the world to the juice they crave.  Though our group was smaller than most, we have truly created something incredible.</p>
+                </div>
+				<div class="row">
+					<div class="col-lg-12 text-center">
+						<p></p>
+					</div>
+				</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visionaries Section -->
+    <section class="success" id="visionaries">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Our Visionaries</h2>
+                    <hr class="star-light">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-lg-offset-3">
+                    <p>Aaron Aaeng</p>
+                </div>
+                <div class="col-lg-4">
+                    <p>Peter Wang</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-lg-offset-3">
+                    <p>Bryce Melvins</p>
+                </div>
+                <div class="col-lg-4">
+                    <p>Emma Langdon</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vision Section -->
+    <section class="success" id="vision">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Our Vision</h2>
+                    <hr class="star-light">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <p>To be Earth's most drink-centric website bringing a multitude of recipes to our user.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer>
@@ -212,4 +221,3 @@
 </body>
 
 </html>
-

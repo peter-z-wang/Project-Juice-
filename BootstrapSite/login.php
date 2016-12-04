@@ -14,7 +14,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>After Dark</title>
+    <title>Recipes</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -93,86 +93,108 @@
         </div>
     </header>
 
-    <!-- Dropdowns -->
-    
-	<?php
-	   include("config.php");
-	   session_start();
-	   
-	   if($_SERVER["REQUEST_METHOD"] == "POST") {
-	      // username and password sent from form 
-	      
-	      $myusername = mysqli_real_escape_string($db,$_POST['username']);
-	      $mypassword = mysqli_real_escape_string($db,$_POST['password']); 
-	      
-	      $sql = "SELECT * FROM Users WHERE userName = '$myusername' and passWord = '$mypassword'";
-	      $result = mysqli_query($db,$sql);
-	    //  $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
-	      $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
-	      $count = mysqli_num_rows($result);
-	      
-	      // If result matched $myusername and $mypassword, table row must be 1 row
-			
-	      if($count == 1) {
-	      //   session_register("myusername");
-	         $_SESSION['login_user'] = $myusername;
-	         
-	         header("location: index.html");
-	      }else {
-	         $error = "Your Login Name or Password is invalid";
-	      }
-	   }
-	?>
-	<html>
-	   
-	   <head>
-	      <title>Login Page</title>
-	      
-	      <style type = "text/css">
-	         body {
-	            font-family:Arial, Helvetica, sans-serif;
-	            font-size:14px;
-	         }
-	         
-	         label {
-	            font-weight:bold;
-	            width:100px;
-	            font-size:14px;
-	         }
-	         
-	         .box {
-	            border:#666666 solid 1px;
-	         }
-	      </style>
-	      
-	   </head>
-	   
-	   <body bgcolor = "#FFFFFF">
-		
-	      <div align = "center">
-	         <div style = "width:300px; border: solid 1px #333333; " align = "left">
-	            <div style = "background-color:#333333; color:#FFFFFF; padding:3px;"><b>Login</b></div>
+    <!-- Post Content -->
+    <body style = "background-color:black;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="col-lg-12 text-center">
+						<h2 style = "color:white;">Login</h2>
+						<hr class="star-light">
+					</div>
+				</div>
+            </div>
+        </div>
 					
-	            <div style = "margin:30px">
-	               
-	               <form action = "" method = "post">
-	                  <label>UserName  :</label><input type = "text" name = "username" class = "box"/><br /><br />
-	                  <label>Password  :</label><input type = "password" name = "password" class = "box" /><br/><br />
-	                  <input type = "submit" value = " Submit "/><br />
-	               </form>
-	               
-	               <div style = "font-size:11px; color:#cc0000; margin-top:10px"><?php echo $error; ?></div>
-						
-	            </div>
+					<?php
+					   include("config.php");
+					   session_start();
+					   
+					   if($_SERVER["REQUEST_METHOD"] == "POST") {
+					      // username and password sent from form 
+					      
+					      $myusername = mysqli_real_escape_string($db,$_POST['username']);
+					      $mypassword = mysqli_real_escape_string($db,$_POST['password']); 
+					      
+					      $sql = "SELECT * FROM Users WHERE userName = '$myusername' and passWord = '$mypassword'";
+					      $result = mysqli_query($db,$sql);
+					    //  $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
+					      $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
+					      $count = mysqli_num_rows($result);
+					      
+					      // If result matched $myusername and $mypassword, table row must be 1 row
+							
+					      if($count == 1) {
+					      //   session_register("myusername");
+					         $_SESSION['login_user'] = $myusername;
+					         
+					         header("location: welcome.html");
+					      }else {
+					         $error = "Your Login Name or Password is invalid";
+					      }
+					   }
+					?>
 					
-	         </div>
+					
+					<html>
+   
+   <head>
+      <title>Login Page</title>
+      
+      <style type = "text/css">
+         body {
+            font-family:Arial, Helvetica, sans-serif;
+            font-size:14px;
+         }
+         
+         label {
+            font-weight:bold;
+            width:100px;
+            font-size:14px;
+         }
+         
+         .box {
+            border:#666666 solid 1px;
+         }
+      </style>
+      
+   </head>
+   
+   <body bgcolor = "#FFFFFF">
+	
+      <div align = "center">
+         <div style = "width:300px; border: solid 1px #333333; " align = "left">
+            <div style = "background-color:#333333; color:#FFFFFF; padding:3px;"><b>Login</b></div>
 				
-	      </div>
-	
-	   </body>
-	</html>
-	
+            <div style = "margin:30px">
+               
+               <form action = "" method = "post">
+                  <label>UserName  :</label><input type = "text" name = "username" class = "box"/><br /><br />
+                  <label>Password  :</label><input type = "password" name = "password" class = "box" /><br/><br />
+                  <input type = "submit" value = " Submit "/><br />
+               </form>
+               
+               <div style = "font-size:11px; color:#cc0000; margin-top:10px"><?php echo $error; ?></div>
+					
+            </div>
+				
+         </div>
+			
+      </div>
 
+   </body>
+</html>
+
+					
+					
+					
+					
+					
+					
+					
+                  
+					
+		
     <hr>
 
     <!-- Footer -->
