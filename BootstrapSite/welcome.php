@@ -58,7 +58,7 @@
                         <a href="afterdark.html">After Dark</a>
                     </li>
                     <li>
-                        <a href="login.php">Login</a>
+                        <a href="logout.php">Logout</a>
                     </li>
                     <li>
                         <a href="contact.html">Register</a>
@@ -85,6 +85,8 @@
     </header>
 
     <!-- Find Your Juice Section -->
+   
+    
     <section class="success" id="find-your-juice">
         <div class="container">
             <div class="row">

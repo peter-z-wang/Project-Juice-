@@ -1,20 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-<style>
-	body{
-		zoom: 100%
-	}
-</style>
+
 <head>
-	
-	
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Recipes</title>
+    <title>Project Juice</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -36,10 +31,8 @@
 
 </head>
 
-
-
 <body>
-	
+
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
         <div class="container-fluid">
@@ -59,18 +52,17 @@
                         <a href="index.html">Home</a>
                     </li>
                     <li>
-                        <a href="about.html">Classic</a>
+                        <a href="classic.html">Classic</a>
                     </li>
                     <li>
                         <a href="afterdark.html">After Dark</a>
                     </li>
                     <li>
-                        <a href="contact.html">Login</a>
+                        <a href="login.php">Login</a>
                     </li>
                     <li>
                         <a href="contact.html">Register</a>
                     </li>
-                    
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -80,20 +72,21 @@
 
     <!-- Page Header -->
     <!-- Set your background image for this header on the line below. -->
-    <header class="intro-header" style="background-image: url('img/After Dark Website Logo.png')" "background-size: 8000px 6000px">
+    <header class="intro-header" style="background-image: url('img/home-logo.png')">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <div class="post-heading">
-                       <h1>  </h1>
-                        <span class="meta"><a href="#"></a></span>
+                <div class="col-lg-18 col-lg-offset-20 col-md-22.5 col-md-offset-10">
+                    <div class="site-heading">
+                        <h1></h1>
                     </div>
                 </div>
             </div>
         </div>
     </header>
 
-    <!-- Post Content -->
+   
+      <!-- Post Content -->
+<!--
     <body style = "background-color:black;">
         <div class="container">
             <div class="row">
@@ -105,6 +98,7 @@
 				</div>
             </div>
         </div>
+-->
 					
 					<?php
 					   include("config.php");
@@ -125,10 +119,12 @@
 					      // If result matched $myusername and $mypassword, table row must be 1 row
 							
 					      if($count == 1) {
-					      //   session_register("myusername");
-					         $_SESSION['login_user'] = $myusername;
-					         
-					         header("location: welcome.html");
+							//   unset($row['salt']); 
+							unset($row['password']); 
+							//$_SESSION['user'] = $row; 
+					         $_SESSION['user'] = $myusername;
+					         header("Location: welcome.php"); 
+					        // header("location: welcome.html");
 					      }else {
 					         $error = "Your Login Name or Password is invalid";
 					      }
@@ -195,7 +191,9 @@
                   
 					
 		
+<!--
     <hr>
+-->
 
     <!-- Footer -->
     <footer>
@@ -234,4 +232,3 @@
 </body>
 
 </html>
-

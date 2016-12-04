@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -89,15 +91,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Find Your Juice</h2>
+                    <h2>You've been logged out</h2>
                     <hr class="star-light">
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <p>Different juices speak to different souls.  It's our mission to let you find the juice that speaks to you.</p>
-                </div>
-            </div>
+           
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <p></p>
@@ -106,86 +104,7 @@
         </div>
     </section>
 
-    <!-- About Section -->
-    <section class="success" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>About</h2>
-                    <hr class="star-light">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-lg-offset-2">
-                    <p>Project Juice was created to quench everyone's desire for a central location for juice.  From smoothies to mixed drinks, anyone can find the liquid they crave.</p>
-                </div>
-                <div class="col-lg-4">
-                    <p>Born from the minds of just four visionaries, we have connected the world to the juice they crave.  Though our group was smaller than most, we have truly created something incredible.</p>
-                </div>
-				<div class="row">
-					<div class="col-lg-12 text-center">
-						<p></p>
-					</div>
-				</div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Visionaries Section -->
-    <section class="success" id="visionaries">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Our Visionaries</h2>
-                    <hr class="star-light">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-lg-offset-3">
-                    <p>Aaron Aaeng</p>
-                </div>
-                <div class="col-lg-4">
-                    <p>Peter Wang</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-lg-offset-3">
-                    <p>Bryce Melvins</p>
-                </div>
-                <div class="col-lg-4">
-                    <p>Emma Langdon</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <p></p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Vision Section -->
-    <section class="success" id="vision">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Our Vision</h2>
-                    <hr class="star-light">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <p>To be Earth's most drink-centric website bringing a multitude of recipes to our user.</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <p></p>
-                </div>
-            </div>
-        </div>
-    </section>
-
+  
     <!-- Footer -->
     <footer>
         <div class="container">
