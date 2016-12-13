@@ -1,0 +1,27 @@
+Project Juice is fully functioning and ready for use. Of the initial goals for the website, the majority were included in the final product. Project Juice is a drink recipe website targeted for college students and young adults. It allows users to create accounts, search recipes on the Project Juice Classic, or search for alcoholic beverage recipes on After Dark, provided the users are 21+. The implementation of Project Juice utilized various development technologies including SQL, MySQL Workbench, PHP, HTML, CSS, and Bootstrap. An SQL database was used to create the website’s back-end. The database included a table for user information, including login, password, and birth date, a drink recipe table for the Project Juice Classic, and a separate alcohol drink recipe table for After Dark.
+
+The website’s front-end was developed using PHP and HTML along with MySQL queries to collect data from the website’s database. The main web pages included the register user functionality, login and logout functionality, and the ability to search for drink recipes on both the Classic and After Dark versions of the website. 
+
+While the initial functioning website was made up of PHP and HTML, it lacked an original design or consistent styling on the various web pages. To create an attractive, streamlined website, Bootstrap was applied to the existing PHP files. Bootstrap provided many templates for interactive website development which were highly customizable. Project Juice user relied on a generic template for the website layout, but significant changes were made to the template, particularly the graphics and color scheme. The resulting website has a contemporary design which is appealing to target users such as college students. While most pages included the same layout made for Project Juice Classic, separate graphics and color scheme were designed for the After Dark recipe page. The After Dark recipe page had a darker color scheme and graphics that emulated actual “after dark” signs.
+
+Accomplishments:
+Implemented Agile software development to deliver constant improvements to the project
+Learned syntax for MySQL queries
+Created unique graphics for the website
+Connected SQL database back-end to front-end via PHP and MySQL
+Created an extensive drink recipe database
+Implemented user login and logout functionality
+Implemented user registration functionality
+Learned website development as none of our team members had done any prior web development
+Integrated Bootstrap into website’s PHP and HTML files
+Hosted website using Amazon Web Services and Github.io
+
+Outstanding Issues:
+Lack of sessioning throughout website – only some pages reflect when a user is logged in
+
+Future goals:
+Implement rating system where users can rate recipes and save their favorite recipes
+Add additional recipes and include graphics for each recipe
+Allow for sorting recipes by difficulty and number of ingredients
+
+
